@@ -1,15 +1,19 @@
-SRCS		=   src/get_path.c \
-				src/ft_split.c \
-				src/pipex.c \
-				src/utils.c
+SRCS		=   get_path.c \
+				ft_split.c \
+				pipex.c \
+				utils.c
 
-SRCS_BONUS	=	src/get_path_bonus.c \
-				src/ft_split_bonus.c \
-				src/pipex_bonus.c \
-				src/utils_bonus.c \
-				src/ft_pipex_bonus.c \
-				src/get_next_line.c \
-				src/get_next_line_utils.c
+SRCS		:= $(addprefix src/,$(SRCS)) 
+
+SRCS_BONUS	=	get_path_bonus.c \
+				ft_split_bonus.c \
+				pipex_bonus.c \
+				utils_bonus.c \
+				ft_pipex_bonus.c \
+				get_next_line.c \
+				get_next_line_utils.c
+
+SRCS_BONUS	:= $(addprefix src/,$(SRCS_BONUS)) 
 
 OBJS		= ${SRCS:.c=.o}
 
