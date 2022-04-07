@@ -1,2 +1,2 @@
 # 42 pipex
-Use UNIX pipes in C
+UNIX pipes in C
